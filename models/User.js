@@ -12,6 +12,10 @@ class User {
         return this.firstName + " " + this.lastName;
     }
 
+    getFullAddress() {
+        return this.city + ", " + this.country;
+    }
+
 }
 
 export default User;
