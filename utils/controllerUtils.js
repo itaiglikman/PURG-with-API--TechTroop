@@ -1,4 +1,4 @@
-export function handleApiSuccess(results, state) {
+function handleApiSuccess(results, state) {
     const [users, quote, pokemon, aboutMe] = results;
     const ful = 'fulfilled';
     let didFail = false;
@@ -41,5 +41,11 @@ export function handleApiSuccess(results, state) {
         didFail = true;
     }
 
+    if (didFail) alert('some error accrued, please try again later');
+
     return didFail;
+}
+
+export default {
+    handleApiSuccess,
 }
