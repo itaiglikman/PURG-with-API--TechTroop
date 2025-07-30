@@ -20,8 +20,13 @@ export function handleApiSuccess(results, state) {
         didFail = true;
     }
 
-    if (pokemon.status === ful)
+    if (pokemon.status === ful) {
+        pokemon.value.name = pokemon.value.name
+            .split('-')
+            .map(part => part[0].toUpperCase() + part.slice(1))
+            .join(' ');
         state.pokemon = pokemon.value;
+    }
     else {
         state.pokemon = null;
         console.error(`getPokemon failed:`, pokemon.reason);

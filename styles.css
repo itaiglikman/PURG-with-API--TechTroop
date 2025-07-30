@@ -96,6 +96,12 @@ header {
   gap: 1rem;
 }
 
+#pokemon-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* Cards */
 .card {
   background-color: white;
