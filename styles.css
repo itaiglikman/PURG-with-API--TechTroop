@@ -19,13 +19,19 @@ body {
 /* Header */
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  position: relative;
+}
+
+#user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .circle-image {
@@ -47,23 +53,32 @@ header {
 }
 
 /* Button */
-.generate-btn {
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.user-btn {
   display: block;
-  margin: 1rem;
-  padding: 0.6rem 1.2rem;
+  padding: 0.3rem 0.8rem;
   font-size: 1rem;
-  background-color: #0077cc;
   color: white;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
+  background-color: #0077cc;
 }
 
-.generate-btn:hover {
-  background-color: #005fa3;
+.user-btn:hover,
+.user-btn:active {
+    cursor: pointer;
+    background-color: #005fa3;
+}
+
+.user-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 /* Layout Wrapper */
@@ -96,10 +111,10 @@ header {
   gap: 1rem;
 }
 
-#pokemon-info{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+#pokemon-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Cards */

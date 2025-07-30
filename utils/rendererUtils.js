@@ -9,13 +9,13 @@ const aboutMe = $('#aboutme-text');
 
 function displayUsers(state) {
     if (state.mainUser) {
-        $(mainUserName).text(state.mainUser.getFullName());
-        $(mainUserLocation).text(state.mainUser.getFullAddress());
+        $(mainUserName).text(state.mainUser.firstName + " " + state.mainUser.lastName);
+        $(mainUserLocation).text(state.mainUser.city + ", " + state.mainUser.country);
         $(mainUserImage).attr('src', state.mainUser.imageURL);
 
         // friends side bar:
         state.friends.forEach(f => {
-            const li = $('<li>').text(f.getFullName());
+            const li = $('<li>').text(f.firstName + " " + f.lastName);
             $(friendsUl).append(li);
         });
     } else {
