@@ -15,12 +15,18 @@
     <div id="app">
         <!-- main user info -->
         <header id="header">
-            <img id="main-user-image" class="circle-image">
-            <div id="main-user-info">
-                <h1 id="main-user-name">Your Name</h1>
-                <p id="main-user-location">City, State</p>
+            <div id="user">
+                <img id="main-user-image" class="circle-image">
+                <div id="main-user-info">
+                    <h1 id="main-user-name">Your Name</h1>
+                    <p id="main-user-location">City, State</p>
+                </div>
             </div>
-            <button id="load-user-btn" class="generate-btn">Generate Profile</button>
+            <div id="buttons">
+                <button id="generate-user-btn" class="user-btn generate active">Generate Profile</button>
+                <button id="save-user-btn" class="user-btn save" disabled>Save Profile</button>
+                <button id="load-user-btn" class="user-btn load" disabled>Load Profile</button>
+            </div>
         </header>
 
 
@@ -43,8 +49,8 @@
                 <section id="pokemon-section" class="card">
                     <h2>Favorite Pokémon</h2>
                     <div id="pokemon-info">
-                    <img id="pokemon-image" class="circle-image small">
-                    <p id="pokemon-name"></p>
+                        <img id="pokemon-image" class="circle-image small">
+                        <p id="pokemon-name"></p>
                     </div>
                 </section>
 
