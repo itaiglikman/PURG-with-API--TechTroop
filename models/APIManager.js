@@ -1,6 +1,6 @@
 class APIManager {
     constructor() {
-        this.usersAPI = 'https://randomuser.me/api/?results=7/';
+        this.usersAPI = 'https://randomuser.me/api/?results=7';
         this.quoteAPI = 'https://api.kanye.rest/';
         this.randPokemonApi = 'https://pokeapi.co/api/v2/pokemon/';
         this.meatAPI = 'https://baconipsum.com/api/?type=all-meat/';
