@@ -13,7 +13,7 @@ function Renderer(state) {
     // main user header:
     $(mainUserName).text(state.mainUser.getFullName());
     $(mainUserLocation).text(state.mainUser.getFullAddress());
-    $(mainUserImage).attr('src', state.mainUser?.imageURL);
+    $(mainUserImage).attr('src', state.mainUser.imageURL);
     
     // friends side bar:
     state.friends.forEach(f => {
@@ -26,7 +26,7 @@ function Renderer(state) {
     
     // pokemon:
     $(pokemonName).text(state.pokemon.name);
-    $(pokemonImage).attr('src', state.pokemon?.imageURL);
+    $(pokemonImage).attr('src', state.pokemon.imageURL);
     
     // aboutMe:
     $(aboutMe).text(state.aboutMe);

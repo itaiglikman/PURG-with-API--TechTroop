@@ -1,7 +1,12 @@
+import User from "./User.js";
+
 class APIManager {
     constructor() {
+        // this.usersAPI = 'https://randomuer.me/api/?results=7'; //
         this.usersAPI = 'https://randomuser.me/api/?results=7';
+        // this.quoteAPI = 'https://api.kanye.rst/'; //
         this.quoteAPI = 'https://api.kanye.rest/';
+        // this.randPokemonApi = 'https://pokeapi.co/api/v2/poemon/'; //
         this.randPokemonApi = 'https://pokeapi.co/api/v2/pokemon/';
         this.meatAPI = 'https://baconipsum.com/api/?type=all-meat/';
     }
@@ -9,7 +14,7 @@ class APIManager {
     //handle errors
 
     /**
-     * @returns array with 7 random users objets
+     * @returns array with 7 random users objects
      */
     async getUsers() {
         try {
