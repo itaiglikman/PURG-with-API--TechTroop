@@ -8,8 +8,8 @@ class User {
         this.imageURL = apiUser.picture.medium;
     }
 
-    getFullname() {
-        return this.firstName + this.lastName;
+    getFullName() {
+        return this.firstName + " " + this.lastName;
     }
 
 }
