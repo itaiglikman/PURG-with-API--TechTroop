@@ -1,0 +1,1 @@
+// holds all page data: main users, friends, pokemon, quote
